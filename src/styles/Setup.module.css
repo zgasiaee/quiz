@@ -1,0 +1,90 @@
+body{
+  background-color: #f1f5f8;
+}
+.container{
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.titel {
+  font-weight: bold;
+  font-size: 2.3rem;
+  letter-spacing: 0.5px;
+  color: #102a42;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0;
+}
+.formGroup label {
+  color: #3d4d74;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.formGroup input,
+select {
+  border: none;
+  background-color: #f1f5f8;
+  padding: 7px ;
+  font-size: 1.03rem;
+}
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+}
+.start {
+  border: none;
+  padding: 7px;
+  background-color: #ffb100;
+  color: #102a42;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width:700px){
+  .card {
+    width: 80%;
+  }
+  .titel {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .card {
+    width: 90%;
+    padding: 2em;
+  }
+  .titel {
+    font-size: 1.7rem;
+  }
+  .formGroup {
+    margin: 1em 0;
+  }
+  .formGroup label{
+    font-size: 0.85em;
+  }
+  .formGroup select{
+    font-size: 0.75em;
+  }
+  .start {
+    font-size: 0.9rem;
+  }
+}
